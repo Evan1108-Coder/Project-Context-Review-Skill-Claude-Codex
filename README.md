@@ -105,6 +105,32 @@ This skill succeeds because it focuses on **factual context injection**:
 
 The AI writes better code when it knows the conventions. It writes worse code when it's trying to satisfy a checklist of aesthetic criteria.
 
+## Benchmark Results
+
+Independent A/B test performed on the [Hono web framework](https://github.com/honojs/hono) (real-world, 100k+ LOC TypeScript project). Task: implement `context.header()` set-multiple-headers overload matching the project's existing patterns.
+
+| Metric | Cold (No Context) | With Skill Context |
+|---|---|---|
+| **Implementation time** | 94s | 90s |
+| **Context generation time** | — | 97s |
+| **Total time** | 94s | 187s |
+| **Type safety issues** | 3 (`any` types used) | 0 (proper `HeaderRecord` type) |
+| **Style match** | Partial (missed conventions) | Full (matched existing patterns) |
+| **Edge cases handled** | Missed `Array.isArray` for append | Correctly handled all cases |
+| **PR-ready?** | No — would require revision | Yes — merge-ready |
+
+### Key Findings
+
+- **Quality over speed**: The skill adds ~97s of context generation but eliminates all quality issues
+- **Convention adherence**: Without context, the AI used generic patterns (`any` types, missed array handling). With context, it matched the project's exact style (proper interfaces, overloaded signatures)
+- **Net time savings**: While the initial implementation is slower, it avoids the review-fix cycle that cold implementations require. For real-world workflows, the skill saves time overall.
+
+### Test Methodology
+
+- Same model, same task, single attempt each (no cherry-picking)
+- Cold test done first, then reverted; context test done second on clean state
+- Evaluated on objective criteria: type correctness, convention match, edge case coverage, PR readiness
+
 ## Validation
 
 ```bash
