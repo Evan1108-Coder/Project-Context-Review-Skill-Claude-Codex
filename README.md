@@ -21,6 +21,12 @@ Use this when an AI coding agent needs to understand a repo before editing, revi
 
 A Claude/Codex skill that auto-scans a project codebase and generates structured context — tech stack, patterns, conventions, architecture — so the AI understands the project before writing code.
 
+## How It Works
+
+![Workflow](docs/images/workflow.jpg)
+
+*The skill scans project files, detects patterns and conventions, and outputs structured context for the AI agent.*
+
 ## What It Does
 
 Instead of hand-writing CLAUDE.md files, this skill tells the AI HOW to scan your project and extract the facts it needs. When triggered, it:
