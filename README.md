@@ -1,5 +1,24 @@
 # Project Context Review Skill
 
+> Status: beta. This is a Claude/Codex skill for creating better project context before work begins.
+
+Use this when an AI coding agent needs to understand a repo before editing, reviewing, testing, documenting, or designing.
+
+## Best Use Cases
+
+- Before implementing a feature in an unfamiliar codebase.
+- Before reviewing a pull request or risky change.
+- Before asking an agent to write tests.
+- Before UI work where design conventions matter.
+- Before documentation cleanup where project structure matters.
+
+## Current Limitations
+
+- It summarizes context; it does not prove the whole project is correct.
+- Very large repositories may need focused scans instead of one broad pass.
+- Results depend on the agent actually reading files and running relevant commands.
+
+
 A Claude/Codex skill that auto-scans a project codebase and generates structured context — tech stack, patterns, conventions, architecture — so the AI understands the project before writing code.
 
 ## What It Does
