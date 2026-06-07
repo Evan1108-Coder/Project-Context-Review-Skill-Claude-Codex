@@ -35,7 +35,7 @@ Instead of hand-writing CLAUDE.md files, this skill tells the AI HOW to scan you
 2. **Detects** tech stack, architecture patterns, naming conventions, and tooling
 3. **Outputs** a structured context block that can be referenced while coding
 
-The skill injects **knowledge** (what exists in this codebase), not **judgment** (how things should look). This distinction matters — [A/B testing showed](https://github.com/Evan1108-Coder/Frontend-Web-UI-Craft-Skill) that skills constraining creative judgment hurt AI performance, while skills injecting factual context help.
+The skill injects **knowledge** (what exists in this codebase), not **judgment** (how things should look). This distinction matters — A/B testing showed that skills constraining creative judgment hurt AI performance, while skills injecting factual context help.
 
 ## Structure
 
