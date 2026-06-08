@@ -2,13 +2,13 @@
 
 > A Claude/Codex skill that scans a repository before work starts so agents have real architecture, conventions, and testing context.
 
-![Status](https://img.shields.io/badge/status-beta-6b7280) ![License](https://img.shields.io/github/license/Evan1108-Coder/Project-Context-Review-Skill-Claude-Codex) ![CI](https://img.shields.io/github/actions/workflow/status/Evan1108-Coder/Project-Context-Review-Skill-Claude-Codex/ci.yml?branch=main&label=CI)
+![Status](https://img.shields.io/badge/status-beta-6b7280) ![License](https://img.shields.io/github/license/Evan1108-Coder/Project-Context-Review-Skill-Claude-Codex)
 
 **AI coding skill • repo context maps • review/testing/design readiness**
 
 ## At a Glance
 
-- Real project documentation now includes security, contribution, changelog, CI, and issue/PR workflows.
+- Real project documentation now includes security guidance, contribution notes, issue/PR templates, and real visual snapshots.
 - Maintenance snapshot: see [docs/project-snapshot.md](docs/project-snapshot.md) for a generated file-mix chart and repository checklist.
 - Public repo: https://github.com/Evan1108-Coder/Project-Context-Review-Skill-Claude-Codex
 
