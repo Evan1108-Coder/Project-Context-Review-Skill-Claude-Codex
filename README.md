@@ -14,6 +14,15 @@
 
 ---
 
+
+## Real Visual Snapshot
+
+These visuals are generated from the actual repository structure and project workflow, not placeholders.
+
+![Repository file mix](docs/assets/repo-file-mix.svg)
+
+![Project workflow](docs/assets/workflow.svg)
+
 > Status: beta. This is a Claude/Codex skill for creating better project context before work begins.
 
 Use this when an AI coding agent needs to understand a repo before editing, reviewing, testing, documenting, or designing.
