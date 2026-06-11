@@ -27,6 +27,22 @@ These visuals are generated from the actual repository structure and project wor
 
 Use this when an AI coding agent needs to understand a repo before editing, reviewing, testing, documenting, or designing.
 
+## Why Use This Skill?
+
+- Gives the agent factual project context before it starts changing files.
+- Separates code, design, docs, and testing lenses so scans can stay focused.
+- Reduces repeated manual explanations about stack, structure, conventions, and architecture.
+- Makes review and implementation prompts more grounded in the actual repository.
+
+## Quick Start
+
+```bash
+mkdir -p ~/.claude/skills
+git clone -b master-skill https://github.com/Evan1108-Coder/Project-Context-Review-Skill-Claude-Codex.git ~/.claude/skills/project-context-review
+```
+
+For project-local Claude Code installation, Codex usage, and Claude.ai import notes, see [Installation](#installation).
+
 ## Best Use Cases
 
 - Before implementing a feature in an unfamiliar codebase.
